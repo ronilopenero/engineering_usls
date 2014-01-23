@@ -565,9 +565,10 @@ ul.gallery li{
 	height: 181px;
 	float: left;
 	margin: 0px 18px 10px 0px;
-	background: url(../img/gallery-thumb-bg.png) no-repeat;
+	/*background: url(../img/gallery-thumb-bg.png) no-repeat;*/
 	text-align: center;
 }
+
 
 ul.gallery li img{
 	margin: 1px 0px 0px 1px;

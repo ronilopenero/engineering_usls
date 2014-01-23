@@ -99,26 +99,61 @@
 		
 	<!-- MAIN -->
 	<div id="main">
-			
+				<script type="text/javascript">
+				var end = new Date('01/13/2014 12:00 AM');
+
+				    var _second = 1000;
+				    var _minute = _second * 60;
+				    var _hour = _minute * 60;
+				    var _day = _hour * 24;
+				    var timer;
+
+				    function showRemaining() {
+				        var now = new Date();
+				        var distance = end - now;
+				        if (distance < 0) {
+
+				            clearInterval(timer);
+				            document.getElementById('countdown').innerHTML = 'WELCOME TO SPORTSFEST 2014';
+
+				            return;
+				        }
+			        var days = Math.floor(distance / _day);
+			        var hours = Math.floor((distance % _day) / _hour);
+			        var minutes = Math.floor((distance % _hour) / _minute);
+			        var seconds = Math.floor((distance % _minute) / _second);		
+
+					document.getElementById('countdown').className = "custom excerpt";
+					document.getElementById('countdown').innerHTML = "<p style='color: #ffffff; font-size:25px; background-color:#353535; padding-top:20px; padding-bottom:10px;'>The Countdown to Glory Begins!</p>"
+			        document.getElementById('countdown').innerHTML += days + ' : ';
+			        document.getElementById('countdown').innerHTML += hours + ' : ';
+			        document.getElementById('countdown').innerHTML += minutes + ' : ';
+			        document.getElementById('countdown').innerHTML += seconds;
+					document.getElementById('countdown').innerHTML += "<br><p style = 'font-size:10px;'>days : hours : mins : sec</p>"
+			    }
+
+   				 timer = setInterval(showRemaining, 1000);
+				</script>
+				<center><div id='countdown' style="background-color: #454545; font-size: 30px; color: #ffffff; height: 100px; padding-top: 2px; padding-bottom: 10px; border:5px solid;
+border-radius:15px; box-shadow: 0px 5px 5px #888888;"></div></center>
+				<br>
 			<!-- slideshow -->
 			<div id="slideshow">
 				<ul id="slides">
+					<li><img src="slides/05.jpg"  alt="Imagen" /></li>
+	                <li><img src="slides/06.jpg"  alt="Imagen" /></li>
 	                <li><img src="slides/01.jpg"  alt="Imagen" /></li>
-	                <li><img src="slides/02.jpg"  alt="Imagen" /></li>
 	                <li><img src="slides/03.jpg"  alt="Imagen" /></li>
+	                <li><img src="slides/04.jpg"  alt="Imagen" /></li>
 	          	</ul>
 	          	<span></span>
 	          	<a href="#"><img src="img/prev-slide.png"  alt="Prev" id="prev" /></a>
 	          	<a href="#"><img src="img/next-slide.png"  alt="Next" id="next" /></a>
 			</div>
 			<!-- ENDS slideshow -->
-			
-			<p class="custom excerpt">The Countdown to Glory Begins!
-				<br />
-				<div id="timer">
-				<script type="text/javascript">window.onload = CreateTimer("timer", 30);</script>
-			</div>
-			</p>
+			<img src="slides/02.jpg"  alt="Imagen" style="background-color: #454545; padding-top: 2px; padding-bottom: 10px; border:5px solid;
+border-radius:15px; margin-bottom: 20px; box-shadow: 0px 5px 5px #888888;"/><br>
+
 			
 			
 			
@@ -151,8 +186,8 @@
 					</div>
 					<h2 class="custom">SCOREBOARD</h2>
 					<h5 class="custom color2">EVENTS WON DURING SPORTSFEST 2014</h5>
-					<p class="thumb-text">THIS PAGE IS UNDER CONSTRUCTION</p>
-					<p><a href="sortsfest.html" class="more">More</a></p>
+					<p class="thumb-text">See the schedule of events and a rundown on the current scores</p>
+					<p><a href="sportsfest.html" class="more">More</a></p>
 				</div>	
 				
 								
@@ -161,8 +196,8 @@
 			
 			
 	</div>
-	<!-- ENDS MAIN -->
-	
+
+
 	
 	</div>
 	<!-- ENDS WRAPPER -->
@@ -175,13 +210,21 @@
 			
 			<ul id="follow">
 				<li><p>Follow us: </p></li>
-				<li><a href="https://www.facebook.com/groups/Engg.Tech.Usls/"><img src="img/facebook.png" alt="Facebook" /></a></li>
+				<li><a href="https://www.facebook.com/groups/Engg.Tech.Usls/" target="_blank"><img src="img/facebook.png" alt="Facebook" /></a></li>
 			</ul>
 				<h5><em>BRAVER | STRONGER</em></h5>
 				<h1>COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
-			<div class="footer-cols">
-
-			</div>
+			<center><div class="footer-cols">
+<!-- hitwebcounter Code START -->
+<a href="http://www.hitwebcounter.com/countersiteservices.php" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=5242182&style=0038&nbdigits=7&type=page&initCount=0" title="easily put counter" Alt="easily put counter"   border="0" >
+</a><br/>
+<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/how-to/vbulletin-web-counter.php" title="Website Traffic" 
+target="_blank" style="font-family: Geneva, Arial, Helvetica, sans-serif; 
+font-size: 9px; color: #908C86; text-decoration: underline ;"><strong>Page Views</strong>
+</a>   
+  
+			</div></center>
 
 		</div>
 	</div>
